@@ -64,7 +64,7 @@ jobs:
           ./orangefox_sync.sh --help
           echo "::endgroup::"
           echo "::group::Run Orangefox_sync.sh"
-          ./orangefox_sync.sh --branch ${{env.Rec_ver}} --path ${{github.workspace}}/${{env.WorkSpace}} --ssh 0
+          ./orangefox_sync.sh --branch ${{env.Rec_ver}} --path ${{github.workspace}}/${{env.WorkSpace}} --ssh 1
           echo "::endgroup::"
 
       - name: Sync device tree
